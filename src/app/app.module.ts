@@ -4,17 +4,24 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HelloComponent } from './hello/hello.component';
+import { RouterModule } from '@angular/router';
+import { route1 } from './route.config';
+import { ErrorComponentComponent } from './error-component/error-component.component';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HelloComponent
+    ErrorComponentComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot(route1)
   ],
   providers: [],
   bootstrap: [AppComponent]
