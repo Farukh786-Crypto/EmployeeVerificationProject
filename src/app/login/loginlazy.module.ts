@@ -4,6 +4,9 @@ import { LoginComponent } from './login.component';
 import { RouterModule } from '@angular/router';
 import {Routes} from '@angular/router'
 import  {FormsModule,ReactiveFormsModule} from '@angular/forms'
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule, MatIconModule, MatInputModule } from '@angular/material';
+
 
 
 
@@ -21,6 +24,9 @@ export const loginroute:Routes=[
     declarations:[LoginComponent],
     imports:[CommonModule,RouterModule.forChild(loginroute),
         FormsModule,ReactiveFormsModule,
+        MatCardModule,
+        MatFormFieldModule,
+        MatInputModule
     
     ],
     providers:[],
@@ -30,8 +36,7 @@ export const loginroute:Routes=[
 })
 
 
-export class LoginLazyClass{
-    
+export class LoginLazyClass{    
 }
 
 
