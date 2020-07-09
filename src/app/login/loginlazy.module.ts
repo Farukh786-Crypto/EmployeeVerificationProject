@@ -4,6 +4,10 @@ import { LoginComponent } from './login.component';
 import { RouterModule } from '@angular/router';
 import {Routes} from '@angular/router'
 import  {FormsModule,ReactiveFormsModule} from '@angular/forms'
+import {MatCardModule} from '@angular/material/card';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatIconModule, MatRadioModule, MatInputModule } from '@angular/material'
+
 
 
 
@@ -21,6 +25,9 @@ export const loginroute:Routes=[
     declarations:[LoginComponent],
     imports:[CommonModule,RouterModule.forChild(loginroute),
         FormsModule,ReactiveFormsModule,
+        MatCardModule,
+        MatFormFieldModule,
+        MatInputModule
     
     ],
     providers:[],

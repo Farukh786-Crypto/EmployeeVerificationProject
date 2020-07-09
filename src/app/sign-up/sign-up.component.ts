@@ -19,7 +19,7 @@ export class SignUpComponent  {
 
       this.signUpModel=new FormGroup({
 
-          
+      CreateProfileFor: new FormControl('', [Validators.required]),    
       username: new FormControl('', [Validators.required]),
       email: new FormControl('', [Validators.required, Validators.pattern(/^(\d{10}|\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4}))$/)]),
       password: new FormControl('', [Validators.required, Validators.pattern('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&].{8,}')]),

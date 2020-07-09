@@ -1,2 +1,24 @@
-<p>login works!</p>
-{{title}}
+<mat-card>
+    <mat-card-title>Login</mat-card-title>
+    <mat-card-content>
+        <form [formGroup]="LoginModel">
+            <p>
+                <mat-form-field>
+                    <input type="text" matInput placeholder="Username" formControlName="username" [(ngModel)]="username">
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field>
+                    <input type="password" matInput placeholder="Password" formControlName="password" [(ngModel)]="password">
+                </mat-form-field>
+            </p>
+            <div class="button">
+                <button type="submit" mat-button color="accent" (click)="login()">Login</button>
+            </div>
+            <div class="form-group">
+                Don't have account ?<a class="" routerLink="/signup">sign-up</a>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>
+
