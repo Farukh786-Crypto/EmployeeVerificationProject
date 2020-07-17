@@ -32,13 +32,7 @@ export const loginroute:Routes=[
     ],
     providers:[],
     exports:[LoginComponent]
-
-
 })
-
-
 export class LoginLazyClass{
     
 }
-
-
