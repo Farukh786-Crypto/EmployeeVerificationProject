@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { route1 } from './route.config';
 import { ErrorComponentComponent } from './error-component/error-component.component';
+import { MaterialModule } from './material/material.module';
 
 
 
@@ -20,6 +21,7 @@ import { ErrorComponentComponent } from './error-component/error-component.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MaterialModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(route1)
   ],

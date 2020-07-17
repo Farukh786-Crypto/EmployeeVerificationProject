@@ -7,6 +7,7 @@ import  {FormsModule,ReactiveFormsModule} from '@angular/forms'
 import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatIconModule, MatRadioModule, MatInputModule } from '@angular/material'
+import { MaterialModule } from '../material/material.module';
 
 
 
@@ -25,9 +26,10 @@ export const loginroute:Routes=[
     declarations:[LoginComponent],
     imports:[CommonModule,RouterModule.forChild(loginroute),
         FormsModule,ReactiveFormsModule,
-        MatCardModule,
-        MatFormFieldModule,
-        MatInputModule
+        // MatCardModule,
+        // MatFormFieldModule,
+        // MatInputModule,
+        MaterialModule
     
     ],
     providers:[],
