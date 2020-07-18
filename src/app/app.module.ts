@@ -7,8 +7,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { route1 } from './route.config';
 import { ErrorComponentComponent } from './error-component/error-component.component';
+<<<<<<< HEAD
 import { FamilyDetailsComponent } from './family-details/family-details.component';
 import { EducationalDetailsComponent } from './educational-details/educational-details.component';
+=======
+import { MaterialModule } from './material/material.module';
+>>>>>>> 877479606d3a68a6af736035df7ac2cb6958d5f1
 
 
 
@@ -24,6 +28,7 @@ import { EducationalDetailsComponent } from './educational-details/educational-d
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MaterialModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(route1)
   ],
