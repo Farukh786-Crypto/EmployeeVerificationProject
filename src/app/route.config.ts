@@ -8,6 +8,8 @@ export const route1:Routes=[
 
     {path:'',loadChildren:'./login/loginlazy.module#LoginLazyClass'},
     {path:'signup',loadChildren:'./sign-up/signuplazy.module#SignUpLazyClass'},
+    {path:'**',component:ErrorComponentComponent} , //wild route
+
     {path:'**',component:ErrorComponentComponent}
-   
+
 ]

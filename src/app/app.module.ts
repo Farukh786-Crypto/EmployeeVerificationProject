@@ -8,6 +8,8 @@ import { RouterModule } from '@angular/router';
 import { route1 } from './route.config';
 import { ErrorComponentComponent } from './error-component/error-component.component';
 import { MaterialModule } from './material/material.module';
+import { FamilyDetailsComponent } from './family-details/family-details.component';
+import { EducationalDetailsComponent } from './educational-details/educational-details.component';
 
 
 
@@ -15,7 +17,9 @@ import { MaterialModule } from './material/material.module';
 @NgModule({
   declarations: [
     AppComponent,
-    ErrorComponentComponent
+    ErrorComponentComponent,
+    FamilyDetailsComponent,
+    EducationalDetailsComponent
     
   ],
   imports: [
