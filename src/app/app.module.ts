@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { route1 } from './route.config';
 import { ErrorComponentComponent } from './error-component/error-component.component';
+import { FamilyDetailsComponent } from './family-details/family-details.component';
+import { EducationalDetailsComponent } from './educational-details/educational-details.component';
 
 
 
@@ -14,7 +16,9 @@ import { ErrorComponentComponent } from './error-component/error-component.compo
 @NgModule({
   declarations: [
     AppComponent,
-    ErrorComponentComponent
+    ErrorComponentComponent,
+    FamilyDetailsComponent,
+    EducationalDetailsComponent
     
   ],
   imports: [
